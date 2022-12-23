@@ -7,16 +7,21 @@
 
 :root {
   --hue: 190;
-  --primary-color: hsl(var(--hue), 100%, 26%);
+  --hue2: 111;
+  /* --primary-color: hsl(var(--hue), 100%, 26%); */
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
 
   --brand-beige: hsl(39, 100%, 97%);
-  --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
+
+  /* --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%); */
+
   --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
   --brand-dark: hsl(var(--hue), 100%, 14%);
+  --brand-dark2: hsl(var(--hue2), 80%, 14%);
 
-  --bg-light: hsl(180, 14%, 97%);
+  /* --bg-light: hsl(180, 14%, 97%); */
+  --bg-light: hsl(calc(var(--hue) - 22), 23%, 89%);
 
   font-size: 62.5%;
   /* 1rem = 10px */
@@ -40,14 +45,16 @@ body {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 1.6rem;
-
   text-align: center;
-
   overflow: overlay;
-
   background-color: var(--bg-light);
+}
+
+p {
+  color: red;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -66,7 +73,7 @@ img {
 }
 
 section {
-  padding-block: 10rem;
+  padding-block: 1rem;
 }
 
 section header h4 {
@@ -131,8 +138,19 @@ section .content p {
 }
 
 .button2 {
+  /* background: #6a5acd; */
+  background: var(--bg-light);
   /* background: var(--primary-color); */
 
+    /* --headline: hsl(210, 11%, 15%); */
+    /* --paragraph: hsl(210, 9%, 31%); */
+    /* --brand-beige: hsl(39, 100%, 97%); */
+    /* --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%); */
+    /* --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%); */
+    /* --brand-dark: hsl(var(--hue), 100%, 14%); */
+    /* --bg-light: hsl(calc(var(--hue) - 22), 23%, 89%); */
+
+    background: var(--brand-dark2);
   border: none;
   border-radius: 4rem;
 
@@ -156,7 +174,47 @@ section .content p {
   transition: background 200ms;
 }
 
+
+
+.button3 {
+  /* background: #6a5acd; */
+  background: var(--bg-light);
+  /* background: var(--primary-color); */
+
+    /* --headline: hsl(210, 11%, 15%); */
+    /* --paragraph: hsl(210, 9%, 31%); */
+    /* --brand-beige: hsl(39, 100%, 97%); */
+    /* --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%); */
+    /* --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%); */
+    /* --brand-dark: hsl(var(--hue), 100%, 14%); */
+    /* --bg-light: hsl(calc(var(--hue) - 22), 23%, 89%); */
+
+    /* background: var(--brand-dark2); */
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 6rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+
+
+  text-decoration: none;
+
+
+}
+
 .button:hover {
+  background-color: var(--brand-dark);
+}
+
+.button2:hover {
   background-color: var(--brand-dark);
 }
 
@@ -172,12 +230,12 @@ section .content p {
   fill: var(--brand-light);
 }
 
-#navigation .logo path[fill*="#00856F"],
+#navigation .logo path[fill*='#00856F'],
 #backToTopButton circle {
   fill: var(--primary-color);
 }
 
-button.open-menu path[stroke*="#00856F"],
+button.open-menu path[stroke*='#00856F'],
 #contact li path {
   stroke: var(--primary-color);
 }
@@ -187,7 +245,9 @@ body.menu-expanded #navigation .logo path,
   fill: white;
 }
 
-#navigation.scroll button.open-menu path[stroke*="#00856F"] {
+#navigation.scroll
+  button.open-menu
+  path[stroke*='#00856F'] {
   stroke: white;
 }
 
@@ -328,7 +388,7 @@ body.menu-expanded button path {
 }
 
 #home::before {
-  content: "";
+  content: '';
   width: 100%;
   height: calc(76% + var(--nav-height));
   background-color: var(--brand-light);
@@ -392,7 +452,7 @@ body.menu-expanded button path {
 
 /*=== SERVICES =================================*/
 #services header h2 {
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
 }
 
 #services .cards {
@@ -414,7 +474,6 @@ body.menu-expanded button path {
 #services .card h3 {
   margin-block: 1.6rem;
 }
-
 
 #services .card p {
   /* text-align: justify; */
@@ -463,16 +522,21 @@ body.menu-expanded button path {
 /*=== FOOTER =================================*/
 footer {
   background-color: var(--primary-color);
-  padding-block: 6rem;
+  /* padding-block: 1rem; */
 
-  text-align: left;
-
+  /* text-align: left; */
+  text-align: center;
+  align-items: center;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer .logo {
   display: inline-block;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  align-items: center;
 }
 
 footer .logo svg {
@@ -484,15 +548,23 @@ footer .logo path {
   fill: white;
 }
 
+footer a {
+  text-align: center;
+  align-items: center;
+}
 footer p {
   color: var(--brand-beige);
   line-height: 2;
 
   margin-bottom: 3.2rem;
+  text-align: center;
+  align-items: center;
 }
 
 footer .social-links {
   justify-content: flex-start;
+  text-align: center;
+  align-items: center;
 }
 
 /* BACK TO TOP */
@@ -535,7 +607,7 @@ footer .social-links {
   }
 
   section {
-    padding-block: 16rem;
+    padding-block: 2rem;
   }
 
   section header h2 {
@@ -588,7 +660,7 @@ footer .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 2.4rem;
+    /* padding: 1rem 2.4rem; */
 
     border: 1px solid var(--primary-color);
     border-radius: 4rem;
@@ -628,7 +700,7 @@ footer .social-links {
   }
 
   nav#navigation .menu li a::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 2px;
     background-color: var(--primary-color);
@@ -676,8 +748,8 @@ footer .social-links {
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-      "A B"
-      "C C";
+      'A B'
+      'C C';
   }
 
   #home .col-a {
@@ -737,7 +809,7 @@ footer .social-links {
   /*=== ABOUT =================================*/
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
-    grid-template-areas: "B A";
+    grid-template-areas: 'B A';
     gap: 6.7rem;
   }
 
@@ -753,7 +825,7 @@ footer .social-links {
 
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: "A B";
+    grid-template-areas: 'A B';
   }
 
   #contact h2 {
@@ -762,12 +834,12 @@ footer .social-links {
 
   /*=== FOOTER =================================*/
   footer {
-    padding-block: 8rem;
+    padding-block: 1rem;
   }
 
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "A B";
+    grid-template-areas: 'A B';
   }
 
   footer .col-a {
