@@ -67,6 +67,17 @@ ul {
   list-style: none;
 }
 
+#services li {
+  list-style-type: circle;
+   margin-left: 2rem;
+   color: #808080;
+}
+
+#services .desjejum {
+   color: #C71585;
+   font-weight: bold;
+}
+
 img {
   max-width: 100%;
   border-radius: 4%;
