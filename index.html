@@ -12,45 +12,17 @@
 </head>
 
 <body>
-  <nav id="navigation">
-    <div class="wrapper">
-      <a class="logo" href="#services"></a>
-
-      <div class="menu">
-        <ul>
-          <li><a onclick="closeMenu()" href="#services">PROLAM CARDÁPIO SEMANAL</a></li>
-        </ul>
-        <a class="button" onclick="closeMenu()" href="https://wa.me/559281239689" target="_blank">Sugestões</a>
-      </div>
-
-      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </button>
-      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
-  </nav>
-
-  <section id="home"></section>
-
   <section id="services">
     <div class="wrapper">
       <header>
-        <!-- <h4>PROLAM </h4> -->
+        <img src="./assets/imagensInicialLogo.png" alt="PROLAM" />
+        </br>
+        </br>
         <h3>PROLAM CARDÁPIO SEMANAL</h3>
         </br>
       </header>
       <div class="content">
         <div class="cards">
-
 
           <div class="card">
             <a class="Proficional_Academico" target="_blank" href="#services">
@@ -172,11 +144,9 @@
             <P style="font-weight: bold;">LANCHE:</P> MISTO QUENTE </p>
           </div>
 
-          <div class="card" style="background-color:#f6f8f7; border: #f6f8f7">
-          </div>
+          <div class="card" style="background-color:var(--bg-light); border: #f6f8f7"> </div>
 
-          <div class="card" style="background-color:#f6f8f7; border: #f6f8f7">
-          </div>
+          <div class="card" style="background-color:var(--bg-light); border: #f6f8f7"> </div>
 
         </div>
       </div>
@@ -185,28 +155,10 @@
   </section>
 
   <footer>
-
     <div class="wrapper">
-      <div class="col-a">
-        <a class="button" onclick="closeMenu()" href="https://wa.me/559281239689" target="_blank">Sugestões</a>
-        <!-- <a class="logo" href="#services">
-          <img src="./assets/imagensInicialLogo.png" alt="PROLAM" />
-        </a>
-        <p>
-          Todos os direitos reservados </br> PROLAM LAMINADOS
-        </p> -->
-      </div>
-
+      <a class="button2" onclick="closeMenu()" href="https://wa.me/559281239689" target="_blank">Sugestões WhatsApp</a>
     </div>
   </footer>
-
-  <a id="backToTopButton" href="#services">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="20" r="20" fill="#00856F" />
-      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
-  </a>
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./main.js"></script>
