@@ -71,12 +71,15 @@ ul {
   list-style-type: circle;
    margin-left: 2rem;
    color: #808080;
+   padding: .2rem 0;
 }
 
 #services .desjejum {
    color: #C71585;
    font-weight: bold;
+   padding: .5rem 0;
 }
+
 
 img {
   max-width: 100%;
@@ -185,8 +188,6 @@ section .content p {
   transition: background 200ms;
 }
 
-
-
 .button3 {
   /* background: #6a5acd; */
   background: var(--bg-light);
@@ -213,12 +214,7 @@ section .content p {
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
-
-
-
   text-decoration: none;
-
-
 }
 
 .button:hover {
